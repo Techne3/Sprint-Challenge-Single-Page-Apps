@@ -26,7 +26,8 @@ const [searchResults, setSearchResults] = useState([]);
       <SearchForm characters={characters} />
       {characters.map(character => {
         return(
-          <CharacterCard  character={character}/>
+          <CharacterCard key={character.character} character={character}/>
+
           // <div>
           // <h1>{character.name}</h1>
           // <h2>{character.species}</h2>

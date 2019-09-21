@@ -12,6 +12,7 @@ export default function WelcomePage() {
           alt="rick"
           />
           <Link to="/characters" className="link">Characters</Link>
+          <Link to="/locations" className="link">Locations</Link>
       </header>
     </section>
   );

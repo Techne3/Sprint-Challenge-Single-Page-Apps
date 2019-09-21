@@ -4,6 +4,7 @@ export default function SearchForm(props) {
   // console.log(props.characters)
  
   const searchNames = props.characters.map(character => character.name);
+  
 
   const [searchItem, setSearchItem] = useState('');
   const [searched, setSearched] =useState([])
