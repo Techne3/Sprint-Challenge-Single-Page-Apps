@@ -27,6 +27,10 @@ const [searchResults, setSearchResults] = useState([]);
       {characters.map(character => {
         return(
           <CharacterCard  character={character}/>
+          // <div>
+          // <h1>{character.name}</h1>
+          // <h2>{character.species}</h2>
+          // </div>
         )
       })
 

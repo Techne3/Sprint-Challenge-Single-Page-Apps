@@ -11,9 +11,9 @@ export default function SearchForm(props) {
  
 
   useEffect(() => {
-      const results = searchNames.filter(name => {
-        return name.toLowerCase().includes(searchItem);
-      })
+    const results = searchNames.filter(name => {
+      return name.toLowerCase().includes(searchItem);
+    })
       setSearched(results);
   }, [searchItem])
 
