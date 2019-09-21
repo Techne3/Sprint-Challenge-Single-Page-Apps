@@ -10,10 +10,13 @@ const Wrap = styled.div`
   align-items: center;
   flex-wrap:wrap;
   border:2px solid black;
+  margin:2% 10%;
 `
 const Title = styled.h2`
   color:#312c82;
+
 `
+
 
 
 export default function LocationCard(props) {

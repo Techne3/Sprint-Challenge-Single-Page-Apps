@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import LocationCard from './LocationCard'
-import SearchForm from './SearchForm'
+import SearchFormLocs from './SearchFormLoc'
+import {Link} from 'react-router-dom';
+
 
 export default function LocationsList() {
 
@@ -26,11 +28,16 @@ useEffect(()=> {
 
 
 
+
+   
+
 return (
 
     <div>
+        <Link to ="/">Home</Link>
     <h1>Locations</h1>
-    {/* <SearchForm locations={locations} /> */}
+   
+    <SearchFormLocs locations={locations}  className=""/> 
         {locations.map(location =>  {
             return(
                 <div>

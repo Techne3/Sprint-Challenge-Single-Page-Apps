@@ -1,8 +1,9 @@
 import React, { useState,useEffect } from "react";
 
 export default function SearchForm(props) {
-  // console.log(props.characters)
+  // console.log('char', props.characters)
  
+  // const searchNames = props.locations.map(location => location.name);
   const searchNames = props.characters.map(character => character.name);
   
 
@@ -22,6 +23,13 @@ export default function SearchForm(props) {
   const handleChange = (e) => {
     setSearchItem(e.target.value);
   }
+
+  useEffect(()=> {
+
+
+
+
+  },[])
  
 
   return (

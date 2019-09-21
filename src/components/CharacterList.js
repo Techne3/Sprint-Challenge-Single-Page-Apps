@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import CharacterCard from './CharacterCard'
 import SearchForm from './SearchForm'
+import {Link } from 'react-router-dom'
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -23,15 +24,11 @@ const [searchResults, setSearchResults] = useState([]);
 
   return (
     <section className="character-list">
+         <Link to ="/">Home</Link>
       <SearchForm characters={characters} />
       {characters.map(character => {
         return(
           <CharacterCard key={character.character} character={character}/>
-
-          // <div>
-          // <h1>{character.name}</h1>
-          // <h2>{character.species}</h2>
-          // </div>
         )
       })
 
