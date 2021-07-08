@@ -10,6 +10,7 @@ main {
   max-width: 1024px;
   margin: 35px auto;
   background: #fff;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 15px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
@@ -36,4 +37,47 @@ main {
 
 header h1 {
   text-align: center;
+}
+.cardImg{
+  height: 400px;
+  width:500px;
+}
+.characterWrap{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  border:1px solid grey;
+  margin-top:10px;
+  background-color:rgb(238, 235, 235);
+  box-shadow: 4px 10px 16px -6px rgba(71,68,71,1);
+  
+}
+.searchWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background:red; */
+}
+.searchBar{
+  margin:20px ;
+  padding:10px 40px;
+  border-radius: 20px;
+}
+.results{
+  display:flex;
+  color:red;
+  justify-content: center;
+  text-align: center;
+}
+.searchBar:focus{
+  outline:none;
+  border:none;
+}
+.link{
+    /* text-decoration: none; */
+    color:#312c82;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
 }
